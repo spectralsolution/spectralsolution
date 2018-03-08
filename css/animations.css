@@ -1,0 +1,56 @@
+
+.animation-item {
+    -moz-animation-name: dropDown;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 0.9s;
+    -webkit-animation-name: dropDown;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 0.9s;
+    animation-name: dropDown;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.9s;
+}
+.animation-item {
+	-webkit-animation-delay: 0.7s;
+	-moz-animation-delay: 0.7s;
+	animation-delay: 0.7s;
+	opacity:0;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+
+@-moz-keyframes dropDown {
+	0% {
+		-moz-transform: translateY(-100px);
+		opacity:0;
+	}
+	100% {
+		-moz-transform: translateY(0);
+		opacity:1;
+	}
+}
+@-webkit-keyframes dropDown {
+	0% {
+		-webkit-transform: translateY(-100px);
+		opacity:0;
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		opacity:1;
+	}
+}
+@keyframes dropDown {
+	0% {
+		transform: translateY(-100px);
+		opacity:0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity:1;
+	}
+}
